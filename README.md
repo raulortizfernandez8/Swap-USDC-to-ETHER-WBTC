@@ -77,9 +77,7 @@ You gain confidence that the contract logic works with real protocols
 
 # ⚠️ Things to Keep in Mind
 
-amountOutMin in tests is set to 0 to avoid failures due to slippage.
 In production, always protect against MEV and price changes by setting a realistic minimum output.
 
 Tests use a real USDT holder address on Arbitrum. If this account no longer has funds in the future, you’ll need to update it or pin to a specific block.
 
-Code is kept simple on purpose — this is not production-ready code, but rather an educational example of how to interact with Uniswap from your own contracts.
